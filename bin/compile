@@ -1,0 +1,8 @@
+#!/bin/sh
+
+indent() {
+  sed -u 's/^/       /'
+}
+
+chmod +x ./install/*.sh
+cp ./install/* $1
